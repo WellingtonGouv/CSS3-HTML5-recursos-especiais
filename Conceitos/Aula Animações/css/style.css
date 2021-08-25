@@ -1,0 +1,59 @@
+@-webkit-keyframes animacao-caixa {
+    from {/* Estado inicial */
+        background: re;
+    }
+    to{/*Estado final */
+        background: green;
+    }
+}
+
+@-moz-keyframes animacao-caixa {
+    from {/* Estado inicial */
+        background: re;
+    }
+    to{/*Estado final */
+        background: green;
+    }
+}
+
+@-o-keyframes animacao-caixa {
+    from {/* Estado inicial */
+        background: re;
+    }
+    to{/*Estado final */
+        background: green;
+    }
+}
+
+@keyframes animacao-caixa {
+    from {/* Estado inicial */
+        background: re;
+        border-radius: 0px;
+        top:0;
+        left:0;
+    }
+    to{/*Estado final */
+        background: green;
+        border-radius: 300px;
+        top:200px;
+        left:200px;
+    }
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+
+    /*Também devem se usar os prefixos -webkit- / -moz- / -o- */
+    /*
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    */
+
+    animation: animacao-caixa 5s 3s 2 alternate;
+}
